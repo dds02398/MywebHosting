@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /*변수선언*/
+            counter-increment: rint;
+            /*번호를 1씩 붙여가는 태그*/
+        }
+        /*p태그의 문자가 시작되기 전 부분을 선택*/
+        p::before{
+            /*content : 내용. p태그에 들어갈 내용.*/
+            content: counter(rint) ". ";
+        }
+        p::after{
+            content: " - " attr(data-page) " page";
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+    <p data-page="52">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi est officiis voluptas, reprehenderit, incidunt repudiandae impedit voluptatem nulla eveniet aliquam commodi error quis consequuntur ducimus alias veritatis odit? Eveniet corrupti aut labore officiis nisi ab, dicta unde quae perferendis eius aperiam dolorem repudiandae in inventore magnam et? Blanditiis nihil ratione deserunt doloremque veniam omnis fuga adipisci vitae, aliquam assumenda ad quam tempora saepe. Doloremque adipisci ut temporibus vitae atque? Unde nemo minima ullam fugit deleniti temporibus tempora facilis laborum, quam adipisci a, aliquid rem error? Ad facere voluptas accusantium sed consequuntur quos rerum quia eos molestiae id? Doloribus, excepturi quidem?</p>
+    <p data-page="273">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aspernatur laudantium molestiae dolorum doloribus autem vel sunt fugit architecto, accusamus asperiores voluptatum repudiandae quam qui veniam commodi veritatis quo odit omnis, adipisci ad nihil consectetur. Dolores, totam nobis, optio at fuga alias iste quisquam ullam quod doloremque architecto nihil accusamus quae necessitatibus harum facilis tenetur natus fugiat reiciendis eligendi nisi saepe! Deleniti enim amet quos rem ullam nihil reprehenderit modi recusandae, iusto tenetur beatae quidem eius excepturi! Neque nobis officia corrupti dignissimos sint blanditiis, ratione dicta dolorum velit consectetur dolor soluta qui asperiores, minima commodi aliquid. Animi doloribus et cupiditate.</p>
+</body>
+</html>

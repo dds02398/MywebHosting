@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=checkbox]:checked+div{
+            height : 0;
+        }
+        div{
+            overflow : hidden;
+            width:650px;
+            height:300px;
+            transition-duration: 1s;
+
+            /* 구형 웹브라우저에서는 이 transition-duration 기능이
+            일종의 출시직전의 실험기능에 해당된다. */
+            /* 앞에 -ms- -webkit- -moz- 등을 벤더 프리픽스라 부른다. */
+            /* -ms- 마이크로 소프트
+               -moz-모질라재단(파이어폭스)
+               -webkit- 애플에서 처음 만듦*/
+            /* 웹킷은 크롬, 오페라, 사파리에서 쓰이고 있었는데,
+            현재 크롬은 블링크 라는 이름의 프리픽스를 사용한다. */
+            -ms-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum, accusantium. In possimus cum quasi, vero voluptatem excepturi provident. Dolorum recusandae ratione adipisci rerum repellat esse asperiores dolorem ipsum praesentium fugit autem est, dolores accusamus distinctio quod et eos non, nam dolore tempora illum numquam illo. Non debitis sequi aliquam temporibus quasi eaque porro illo, voluptatum, aspernatur velit quae veniam eum saepe exercitationem id ullam ducimus delectus magni eligendi explicabo sit quis dolore sint soluta? Incidunt velit sapiente, quae temporibus voluptatem voluptas nulla itaque consequuntur corrupti tempora veritatis, quisquam ipsa voluptatibus. Quia nobis, voluptatum eum mollitia qui perspiciatis sint molestias eaque vel adipisci, voluptatem illo minima distinctio autem eveniet quasi voluptates asperiores assumenda exercitationem! Autem ad alias quia consectetur tempora inventore placeat laborum enim, doloribus quasi rem quos vitae, explicabo dolores asperiores odit officia iste fugit nisi nobis aut dolor. Eum, rerum maxime expedita repudiandae accusantium, praesentium tenetur, nostrum consequatur labore autem deserunt? Assumenda voluptatem illo vel alias magnam rerum recusandae, eos maxime quisquam, neque odio veniam accusamus sint deleniti id architecto debitis reprehenderit placeat fuga cupiditate nihil non. Corporis amet eum ipsam possimus. Provident dignissimos repellendus blanditiis eaque excepturi pariatur accusantium totam. Nemo minus temporibus ducimus consectetur suscipit autem modi, quibusdam et nobis pariatur placeat cumque nesciunt unde dignissimos eos. Est quia ullam, illum voluptates autem enim nostrum ut minima temporibus, aut dolorum velit animi debitis, cumque adipisci. Consequuntur alias iste, magni qui quas consequatur aperiam inventore modi a quia ut ducimus officiis dignissimos beatae quos corrupti, aliquam sequi rem! Earum recusandae temporibus accusantium laborum quibusdam adipisci enim, ut consequatur provident veniam quis, fugiat doloribus eius dolores. Porro aspernatur, delectus, dolore minus necessitatibus odio architecto doloribus sit assumenda maxime quisquam consequatur esse expedita tenetur ipsam molestiae omnis itaque aperiam ullam vero officiis reprehenderit perferendis beatae atque! Quidem expedita adipisci accusamus!</p>
+    </div>
+</body>
+</html>
